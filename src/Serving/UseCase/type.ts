@@ -1,4 +1,4 @@
-import { ComputedOrder } from "../Order/type";
+import { ComputedOrder } from "../Service";
 
 export type machineInput = machineInputWithSugar |  machineInputWithoutSugar | machineInputMessage
 

@@ -1,8 +1,16 @@
 type WithStick = "WITH_STICK"
 type WithoutStick = "WITHOUT_STICK"
-type drinkTemperature = "extraHot" | "hot" | "cold"
-type coldDrink = "Orange"
-type hotDrink =  "Coffee" | "Chocolate" |  "Tea"
+type ExtraHot = "EXTRA_HOT"
+type Hot = "HOT"
+type Cold = "COLD"
+type Orange = "Orange"
+type coffee = "Coffee"
+type Chocolate = "Chocolate"
+type Tea = "Tea"
+
+export type drinkTemperature = ExtraHot | Hot |Cold
+type coldDrink = Orange
+type hotDrink =  coffee| Chocolate |  Tea
 export type drink = hotDrink | coldDrink
 
 export type BaseOrder = {
@@ -22,11 +30,11 @@ type WithoutSugar = {
 
 type ColdDrink = {
   drink: coldDrink,
-  type: "cold",
+  type: Cold,
 }
 type HotDrink = {
   drink: hotDrink,
-  type: "hot" | "extraHot",
+  type: Hot | ExtraHot,
 }
 
 

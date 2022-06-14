@@ -1,5 +1,5 @@
-import { Money } from "./Payment/type";
-import { drink } from "./Order/type";
+import { Money,drink } from "./Serving";
+
 
 export type codeListOutput = "C" | "H" | "T" | "M" | "O";
 

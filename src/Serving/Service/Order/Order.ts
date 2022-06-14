@@ -1,26 +1,32 @@
 import { BaseOrder, ComputedOrder } from "./type";
-import { DrinkList } from "../Machine/Product";
+import { DrinkList } from "../../Constant";
 
-export const CreateOrder = (order: BaseOrder): ComputedOrder => {
+interface IOrderService {
+  createOrder(order: BaseOrder): ComputedOrder;
+}
+
+const createOrder = (order: BaseOrder): ComputedOrder => {
   const requireStick = order.sugar > 1;
   const drink = DrinkList.find((drink) => drink.name === order.drink)!;
 
-  switch (order.type, requireStick) {
-    j
-  }
   if (!requireStick) {
-    return {
-      drink: drink,
+    return <ComputedOrder>{
+      drink: drink.name,
       sugar: 0,
       stick: "WITHOUT_STICK",
       type: order.type
     };
   } else {
-    return {
-      drink: drink,
+    return <ComputedOrder>{
+      drink: drink.name,
       sugar: order.sugar,
       stick: "WITH_STICK",
       type: order.type
     };
   }
 };
+
+
+export const OrderService : IOrderService = {
+  createOrder
+}
