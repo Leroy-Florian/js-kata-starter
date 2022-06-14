@@ -7,3 +7,4 @@ Starter project for kata (Node, TypeScript, Jest)
 - **Fork**, then clone the repository
 - Install dependencies
 - Start developing (`npm test`)
+# kata-coffee-machine
