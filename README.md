@@ -8,3 +8,4 @@ Starter project for kata (Node, TypeScript, Jest)
 - Install dependencies
 - Start developing (`npm test`)
 # kata-coffee-machine
+# kata-coffee-machine
